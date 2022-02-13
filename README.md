@@ -64,12 +64,13 @@ Amb el reset també tornaran a aparèixer totes les targetes que s’han borrat 
 El reset borrarà la puntuació i la decisió sobre quines assignatures estudiar però no modificarà el PDF que conté les targetes: si s’ha modificat/afegit/eliminat targetes amb el procés explicat a l’apartat 3.3, aquestes es mantindran modificades després del reset.
 
 ### 3.5	Especificacions tècniques del programa i llenguatge de programació
-El programa s’ha escrit en el llenguatge Python. Com a llibreries addicionals s’ha utilitzat pygame, random, os, json, PIL i fitz. Per crear l’executable s’ha utilitzat pyinstaller, una llibreria que permet passar de fitxers .py a .exe per ser utilitzats en ordenadors que no tenen Python instal·lat. 
+El programa s’ha escrit en el llenguatge Python. Com a llibreries addicionals s’ha utilitzat pygame, random, os, json, PIL, fitz i tempfile. Per crear l’executable s’ha utilitzat pyinstaller, una llibreria que permet passar de fitxers .py a .exe per ser utilitzats en ordenadors que no tenen Python instal·lat. 
 Per funcionar, el programa requereix dels fitxers, tots inclosos dins de la carpeta “flashcard_docs”
+
 *	benzene_icon.png: icona del programa
 *	flashcard_dictionary.json: diccionari que emmagatzema el nom de les targetes i la seva puntuació
 *	QO_type_dictionary.json: diccionari que emmagatzema 3 variables booleanes sobre quines assignatures estudiar
 *	QOI/QOII/QOIII_flashcards.pdf: PDFs des d’on s’extreuen les imatges
-*	photo.png: imatge que es mostra, extreta del PDF. Es va actualitzant cada vegada que es canvia de targeta en el programa.
+
 El programa es pot trobar a GitHub en el següent enllaç: https://github.com/nuriafari/FemQO.git 
 Qualsevol dubte, recomanació o modificació que es vulgui fer sobre el programa està benvingut. No dubtis en contactar-me en el correu nuriafarimd@gmail.com.
